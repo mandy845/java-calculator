@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!--links-->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <div class="heading"><h1>calculator</h1></div>
+        <input type="text" class="entry" disabled>
+    <div class="row">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="key_operator" data-action="add"value= "+" >+</button>
+    </div>
+    <div class="row"> 
+        <button value= "4">4</button>
+        <button value = "5">5</button>
+        <button value = "6">6</button>
+         <button class="key_perator" data-action="multiply" value ="*">x</button>   
+    </div>
+    <div>
+        <button value = "1">1</button>
+        <button value = "2">2</button>
+        <button value = "3">3</button>
+        <button class="key_operator" data-action="subtract" value = "-">-</button>
+    </div>   
+       
+    <div class="row">
+         <button data-action="clear" class="key_operator" value = "C">C</button>
+        <button>0</button>
+        <button data-action="decimal" value = ".">.</button>
+          <button class="key_operator" data-action="divide" value = "/">÷</button>
+   </div>
+   <div id="equal-button">
+     <button class="key--equal" data-action="calculate" value = "=">=</button>  
+     <button class="key--equal" value="Del">Del</button>
+   </div>
+        
+      </div>
+
+  <script src="./calculator.js"></script>  
+</body>
+</html>
